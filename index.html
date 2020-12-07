@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abdunabiyev Abror">
   <title>Veterinary clinic</title>
-  <link rel="stylesheet" href="./styles.mini.css">
+  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./normalize.css">
 </head>
-
 <body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal-windows" id="modal">
+    <a href="javascript:void(0)" class="modal-close" id="modal-close">
+      <img src="./images/close.svg" alt="">
+    </a>
+
+    <div class="form2">
+
+      <div class="register">
+        <p class="reg-text">Авторизация:</p>
+        <a href="https://accounts.google.com/signup?hl=en" target=blank>
+          <button class="google">Войти через Google</button><br>
+        </a>
+        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1635645080&extra_1=s|c|313664978339|e|facebook%20register|&placement=&creative=313664978339&keyword=facebook%20register&partner_id=googlesem&extra_2=campaignid%3D1635645080%26adgroupid%3D61402567094%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-299018535828%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiA2af-BRDzARIsAIVQUOedVDCV5cdJd6ejYEcYI5vptpRm1o9OtHfV_efOFmEoSaMu5fBzg88aAjtcEALw_wcB" target="_blank">
+
+          <button class="facebook">Войти через Facebook</button>
+        </a>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru">
+        <h1>Задать вопрос</h1>
+        <input type="text" name="name" required placeholder="Ваше имя" >
+        <div class="textar">
+          <p class="">Опишите Ваш вопрос.</p>
+          <textarea name="question" id="" cols="35" rows="8" required placeholder="Например: в каком возрасте можно прививать от бешенства?"></textarea>
+        </div>
+        <button class="send">Отправить </button>
+      </form>
+
+    </div>
+  </div>
+
+
   <address class="container">
     <div class="info">
       <div class="address">г. Мариуполь, проспект Победы, 48а</div>
@@ -35,16 +68,16 @@
         <a class="logo-link" href="#"><img src="./images/logo.svg" alt="logo" width="178"
             height="96"></a>
 
-        <ul class="navbar-list">
-          <li class="navbar-link"><a class="link-before" href="#">Главная</a></li>
-          <li class="navbar-link"><a  href="#">О Клинике</a></li>
-          <li class="navbar-link"><a  href="#">Наши Услуги</a></li>
-          <li class="navbar-link"><a  href="#">Полезные Статьи</a></li>
-          <li class="navbar-link"><a  href="#">FAQ</a></li>
-          <li class="kontak" ><a class="kontak"  href="#">Контакты</a></li>
-        </ul>
+            <ul class="navbar-list">
+              <li class="navbar-link"><a class="link-before" href="./index.html">Главная</a></li>
+              <li class="navbar-link"><a  href="./index4.html">О Клинике</a></li>
+              <li class="navbar-link"><a  href="./index3.html">Наши Услуги</a></li>
+              <li class="navbar-link"><a  href="#">Полезные Статьи</a></li>
+              <li class="navbar-link"><a  href="#">FAQ</a></li>
+              <li class="navbar-link" ><a class="kontak"  href="./index2.html">Контакты</a></li>
+            </ul>
 
-        <a class="navbar-link-end" href="#">Задать вопрос</a>
+        <a class="navbar-link-end" href="javascript:void(0)" id="ask-question">Задать вопрос</a>
       </div>
     </div>
   </header>
@@ -88,38 +121,44 @@
     <div class="section2-inner container">
       <h3 class="section2-tittle">Наши услуги</h3>
       <div class="section2-services">
-        
+        <div class="vector-img">
+
+          <a href="#"><img class="vector" src="./images/Vector.png" alt=""></a>
+        </div>
           <div class="services-list">
-            <div class="services-list-inner">
+            <a href="#" class="services-list-inner first">
               <img src="./images/doctor 1.png" alt="">
-              <a class="services-item s1" href="#">Первичный осмотр</a>
-            </div>
+              <p class="services-item s1">Первичный осмотр</p>
+            </a>
 
-            <div class="services-list-inner">
+            <a href="#" class="services-list-inner">
               <img src="./images/filled outline.png" alt="">
-              <a class="services-item s2" href="#">Первичный осмотр</a>
-            </div>
+              <p class="services-item s2">Первичный осмотр</p>
+            </a>
 
-            <div class="services-list-inner">
+            <a href="#" class="services-list-inner">
               <img src="./images/filled outline (1).png" alt="">
-              <a class="services-item s3" href="#">Хирургическое вмешательство</a>
-            </div>
+              <p class="services-item s3">Хирургическое вмешательство</p>
+            </a>
 
-            <div class="services-list-inner">
+            <a href="#" class="services-list-inner">
               <img src="./images/filled outline (2).png" alt="">
-              <a class="services-item s4" href="#">Дерматология</a>
-            </div>
+              <p class="services-item s4">Дерматология</p>
+            </a>
 
-            <div class="services-list-inner">
+            <a href="#" class="services-list-inner">
               <img src="./images/veterinary-3 1.png" alt="">
-              <a class="services-item s5" href="#">Лабораторная диагностика</a>
-            </div>
+              <p class="services-item s5" >Лабораторная диагностика</p>
+            </a>
 
-            <div class="services-list-inner end">
+            <a href="#" class="services-list-inner end">
               <img src="./images/filled outline (3).png" alt="">
-              <a class="services-item s6" href="#">Офтальмология</a>
-            </div>
+              <p class="services-item s6" >Офтальмология</p>
+            </a>
+          </div>
+          <div class="vector-img-right">
 
+            <a href="#"><img class="vector-right" src="./images/vector-right.svg" alt=""></a>
           </div>
 
       </div>
@@ -216,12 +255,15 @@
   </div>
 
   <div class="section5">
-    <div class="section5-inner container">
+    <div class="section5-img">
+
       <a
         href="https://goo.gl/maps/V4bpgqf2fSGMgxim6" target="blank"> 
         <img src="./images/Rectangle 48.jpg"  alt=""></a>
+    </div>
+    <div class="section5-inner container">
 
-      <div class="form">
+      <div class="form ">
         <h2 class="form-heading">Обратная связь</h2>
         <p class="form-text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму
           ниже:</p>
@@ -279,6 +321,7 @@
     </div>
   </footer>
 
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>

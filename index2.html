@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinary clinic-Contact</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal-windows" id="modal">
+    <a href="javascript:void(0)" class="modal-close" id="modal-close">
+      <img src="./images/close.svg" alt="">
+    </a>
+
+    <div class="form2">
+
+      <div class="register">
+        <p class="reg-text">Авторизация:</p>
+        <a href="https://accounts.google.com/signup?hl=en" target=blank>
+          <button class="google">Войти через Google</button><br>
+        </a>
+        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1635645080&extra_1=s|c|313664978339|e|facebook%20register|&placement=&creative=313664978339&keyword=facebook%20register&partner_id=googlesem&extra_2=campaignid%3D1635645080%26adgroupid%3D61402567094%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-299018535828%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiA2af-BRDzARIsAIVQUOedVDCV5cdJd6ejYEcYI5vptpRm1o9OtHfV_efOFmEoSaMu5fBzg88aAjtcEALw_wcB" target="_blank">
+
+          <button class="facebook">Войти через Facebook</button>
+        </a>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru">
+        <h1>Задать вопрос</h1>
+        <input type="text" name="name" required placeholder="Ваше имя" >
+        <div class="textar">
+          <p class="">Опишите Ваш вопрос.</p>
+          <textarea name="question" id="" cols="35" rows="8" required placeholder="Например: в каком возрасте можно прививать от бешенства?"></textarea>
+        </div>
+        <button class="send">Отправить </button>
+      </form>
+
+    </div>
+  </div>
+
+  <address class="container">
+    <div class="info">
+      <div class="address">г. Мариуполь, проспект Победы, 48а</div>
+
+      <ul class="phone-list">
+        <li class="phone-link"><a href="tel:+0676347574">(067) 634 -75 - 74</a></li>
+        <li class="phone-link dot"><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+        <li class="phone-link dot"><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+      </ul>
+
+      <div class="work-day">
+        <p ><b>Пн - Пт</b> 8:00 - 18:00</p>
+        <p class="work-day-item"><b>Сб - Вс</b> 8:00 - 14:00</p>  
+      </div>
+    </div>
+  </address>
+
+
+  <header>
+    <div class="header-inner container">
+      <div class="navbar">
+        <a class="logo-link" href="#"><img src="./images/logo.svg" alt="logo" width="178"
+            height="96"></a>
+
+            <ul class="navbar-list">
+              <li class="navbar-link"><a class="link-before" href="./index.html">Главная</a></li>
+              <li class="navbar-link"><a  href="./index4.html">О Клинике</a></li>
+              <li class="navbar-link"><a  href="./index3.html">Наши Услуги</a></li>
+              <li class="navbar-link"><a  href="#">Полезные Статьи</a></li>
+              <li class="navbar-link"><a  href="#">FAQ</a></li>
+              <li class="navbar-link" ><a class="kontak"  href="./index2.html">Контакты</a></li>
+            </ul>
+
+        <a class="navbar-link-end" href="javascript:void(0)" id="ask-question">Задать вопрос</a>
+      </div>
+    </div>
+  </header>
+  <div class="dog-img"></div>
+  <div class="contact container">
+    <h1 class="contact__tittle">Контакты</h1>
+
+    <p class="contact__text">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+    <div class="contact__info">
+
+      <div class="contact__info_item">
+        <img class="info__item-img" src="./images/location.svg" alt="">
+        <p class="info__address">г. Мариуполь, проспект Победы, 48а</p>
+      </div>
+
+      <div class="contact__info_item work-time">
+        <img src="./images/calendar.svg" alt="" class="info__item-img">
+        <p class="info__time-time"><b>Пн - Пт</b> 8:00 - 18:00</p>
+        <p class="info__time-time"><b>Сб - Вс</b> 8:00 - 14:00</p>
+      </div>
+
+      <div class="contact__info_item number">
+        <img src="./images/phone-con.svg" alt="" class="info__item-img">
+        <a class="info__number-tel" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a>
+        <a class="info__number-tel" href="tel:(067) 634 -75 - 74">(0637) 57 - 01 - 31</a>
+        <a class="info__number-tel" href="tel:(067) 634 -75 - 74">(098) 266 - 43 - 89</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-search container">
+    <h2 class="search__text">Как нас найти?</h2>
+  </div>
+
+  <div class="contact-location">
+      <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.2541198530903!2d69.24301991496313!3d41.32508720781877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bfaedfe3e1d%3A0x23ac4a5a705b84ab!2sNajot%20ta&#39;lim%20(Bootcamp)!5e0!3m2!1sru!2s!4v1605991921027!5m2!1sru!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+
+    <img class="vetclinic" src="./images/vetclinic 1.jpg" alt="">
+  </div>
+
+  
+  <footer>
+    <div class="footer container">
+
+      <div class="footer-inner ">
+        <div class="footer-inner-left">
+  
+          <a href="footer-link"><img src="./images/logo.svg" alt="logo"> </a>
+          <ul class="footer-navbar fr">
+            <li class="navbar-item"><a class="navbar-link" href="#">Главная</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">О Клинике</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">Наши Услуги</a></li>
+          </ul>
+          <ul class="footer-navbar">
+            <li class="navbar-item"><a class="navbar-link" href="#">Полезные Статьи</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">FAQ</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-call">
+          <div class="work-day2">
+            <p class="work-day-item"><b>Пн - Пт</b> 8:00 - 18:00</p>
+            <p class="work-day-item"><b>Сб - Вс</b> 8:00 - 14:00</p>
+          </div>
+  
+          <div class="address">г. Мариуполь,<br> проспект Победы, 48а</div>
+  
+          <ul class="phone-list footer-phone">
+            <li class="phone-link"><a href="tel:+0676347574">(067) 634 -75 - 74</a></li>
+            <li class="phone-link dot"><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+            <li class="phone-link dot"><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+          </ul>
+  
+        </div>
+      </div>
+      <p class="footer-text">© 2020 example. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
